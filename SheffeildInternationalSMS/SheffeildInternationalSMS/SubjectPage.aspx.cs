@@ -22,6 +22,9 @@ namespace SheffeildInternationalSMS
             String mconn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mconn);
             String sqlquery = "Insert into[dbo].[Subject](SubName,Marks,Grade) values (@SubName,@Marks,@Grade)";
+                
+
+
             SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
             sqlconn.Open();
             sqlcomm.Parameters.AddWithValue("@SubName", SubNm.Text);

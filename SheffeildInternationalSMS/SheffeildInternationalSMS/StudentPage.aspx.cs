@@ -21,11 +21,12 @@ namespace SheffeildInternationalSMS
         {
             String mconn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mconn);
-            String sqlquery = "Insert into[dbo].[Student](StdFName,StdLName,StdTphn) values (@StdFName,@StdLName,@StdTphn)";
+            String sqlquery = "Insert into[dbo].[Student](StdFName,StdLName,StdAdress,StdTphn) values (@StdFName,@StdLName,@StdAdress,@StdTphn)";
             SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn);
             sqlconn.Open();
             sqlcomm.Parameters.AddWithValue("@StdFName",StdFNm.Text);
             sqlcomm.Parameters.AddWithValue("@StdLName", StdLNm.Text);
+            sqlcomm.Parameters.AddWithValue("@StdAdress", StdAdd.Text);
             sqlcomm.Parameters.AddWithValue("@StdTphn", StdTNum.Text);
             sqlcomm.ExecuteNonQuery();
             StdMsg.Text = "The Student" + StdFNm.Text + "is added to the system Successfully.";

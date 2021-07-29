@@ -15,7 +15,6 @@
             <asp:Label ID="UserLogin" runat="server" Text="UserLogin"></asp:Label>&nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="Stdnt" runat="server" OnClick="Stdnt_Click">Student</asp:LinkButton>&nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="Subs" runat="server" OnClick="Subs_Click">Subjects</asp:LinkButton>&nbsp;&nbsp;&nbsp;
-            <asp:LinkButton ID="Mrks" runat="server" OnClick="Mrks_Click">Marks</asp:LinkButton>&nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="Dshbrd" runat="server" OnClick="Dshbrd_Click">Dash Board</asp:LinkButton>&nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="Logout" runat="server" OnClick="Logout_Click">Log Out</asp:LinkButton>&nbsp;&nbsp;&nbsp;
         </div>

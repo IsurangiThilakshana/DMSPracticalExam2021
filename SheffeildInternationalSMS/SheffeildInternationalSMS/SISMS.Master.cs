@@ -31,11 +31,6 @@ namespace SheffeildInternationalSMS
             Response.Redirect("SubjectPage.aspx");
         }
 
-        protected void Mrks_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MarksPage.aspx");
-        }
-
         protected void Dshbrd_Click(object sender, EventArgs e)
         {
             Response.Redirect("DashBoard.aspx");

@@ -1,8 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SISMS.Master" AutoEventWireup="true" CodeBehind="StudentPage.aspx.cs" Inherits="SheffeildInternationalSMS.StudentPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>This is Student Page</h1>
-    <div style="background-color: lightblue; height:134px; width:408px">
+    <div style="background-color: lightblue; height:198px; width:408px">
     <table border="1">
+        <tr>
+            <td>Student Id</td>
+            <td style="width: 251px">
+                <asp:TextBox ID="StdId" runat="server" Width="182px"></asp:TextBox>
+            </td>
         <tr>
             <td>Student First Name</td>
             <td style="width: 251px">
@@ -13,6 +18,12 @@
             <td>Student Last Name</td>
             <td style="width: 251px">
                 <asp:TextBox ID="StdLNm" runat="server" Width="179px"></asp:TextBox>
+            </td>
+        </tr>
+         <tr>
+            <td>Student Address</td>
+            <td style="width: 251px">
+                <asp:TextBox ID="StdAdd" runat="server" Width="179px"></asp:TextBox>
             </td>
         </tr>
         <tr>
